@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -23,16 +24,17 @@ module.exports = {
         test: /\.(s[ac]ss|css)$/i,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: "asset/resource",
-      },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: "Space Burger",
       template: "src/index.html",
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: "src/assets/images", to: "images" }, // копируем изображения из папки assets/images в папку images
+      ],
     }),
   ],
 };
