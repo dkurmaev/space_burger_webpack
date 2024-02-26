@@ -31,7 +31,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "God Of War",
+      title: "Space Burger",
       template: "src/index.html",
     }),
   ],
