@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="./assets/styles/styles.scss" />
+
+
+</head>
+
+<body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+    </div>
+    <section class="section section-main">
+        <div class="container">
+            <header class="header flex">
+                <div class="header-menu flex">
+                    <div class="header-menu__button">
+                        <span></span>
+                    </div>
+                    <nav class="header-menu__list">
+                        <ul class="flex flex-center">
+                            <li><a data-text="burger" class="header-menu__link menu-link" href="#burger">Bürger</a></li>
+                            <!-- <li><a class="header-menu__link menu-link" href="#sandwich">Sandwich</a></li> -->
+                            <li><a class="header-menu__link menu-link" href="#pommes">Pommes</a></li>
+                            <li><a class="header-menu__link menu-link" href="#kids">Kids</a></li>
+                            <li><a class="header-menu__link menu-link" href="#faq">Getränke</a></li>
+                            <li><a class="header-menu__link menu-link" href="#footer">Souce</a></li>
+
+                            <li>
+                                <div class="header-menu__link lang">
+                                    <span class="current-lang">De</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 330 330"
+                                        style="enable-background: new 0 0 330 330" xml:space="preserve">
+                                        <path id="XMLID_224_"
+                                            d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394  l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393  C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z" />
+                                        <g></g>
+                                        <g></g>
+                                        <g></g>
+                                        <g></g>
+                                        <g></g>
+                                        <g></g>
+                                        <g></g>
+                                        <g></g>
+                                        <g></g>
+                                        <g></g>
+                                        <g></g>
+                                        <g></g>
+                                        <g></g>
+                                        <g></g>
+                                        <g></g>
+                                    </svg>
+
+                                    <div class="header-menu__languages">
+                                        <div class="header-menu__language language" data-lang="de">
+                                            De
+                                        </div>
+                                        <div class="header-menu__language language" data-lang="en">
+                                            En
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-timer flex flex-center">
+                    <!-- <span>Es sind noch bis zum neuen Jahr übrig</span> -->
+                    <div class="header-timer__values flex flex-center">
+                        <div class="header-timer__item">
+                            <div class="header-timer__item-values" id="days">0 Tage</div>
+                            <div class="header-timer__item-info">BIS</div>
+
+                        </div>
+
+                        <div class="header-timer__item">
+                            <div class="header-timer__item-values" id="hours">0</div>
+                            <div class="header-timer__item-info">NEUEN</div>
+
+                        </div>
+
+                        <div class="header-timer__item">
+                            <div class="header-timer__item-values" id="minutes">0</div>
+                            <div class="header-timer__item-info">JAHR</div>
+
+                        </div>
+
+                        <div class="header-timer__item">
+                            <div class="header-timer__item-values" id="seconds">0</div>
+                            <div class="header-timer__item-info">ÜBRIG</div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </header>
+            <div class="description">
+                <div class="description-titel">
+                    <h1>Space <span>Burger</span></h1>
+                    <div class="description-subtitle">
+                        Entdecke den Saftigkeit unserer Bürger! Bestelle jetzt und genieße erstklassiges Rindfleisch
+                        aus Deutschland und der Region Bernau bei Berlin. Schnell, frisch und voller Aktionen!
+                    </div>
+                    <div class="description-button menu-link" href="#burger">
+                        WAHL AUS DER SPEISEKARTE UND BESTELLEN
+                        <script></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" section hidden section-burger " id="burger">
+        <div class="container">
+            <div class="burgers">
+                <h2>SPACE <span>BÜRGER</span> MENÜ</h2>
+                <div class="burgers-list">
+                    <div class="burgers-item">
+                        <div class="burgers-item__img" style="background-image: url(./assets/images/earth.png)">
+                        </div>
+                        <div class="burgers-item__title">Burger “EARTH”</div>
+                        <div class="burgers-item__subtitle">Vegan</div>
+                        <ul class="burgers-item__description">
+                            <li>Green OAT Patties, Veganes</li>
+                            <li>Brötchen, Rucola, Tomaten</li>
+                            <li>Zwiebel, Avicado-Lime-Souce</li>
+                        </ul>
+                        <div class="burgers-item__price">
+                            EUR 9.90
+                        </div>
+                        <div class="burgers-item__allergeneTitle">Enthält Allergene:</div>
+                        <ul class="burgers-item__allergene">
+                            <li></li>
+                            <li>* Brötchen: Gluten</li>
+                            <li>* Konservierungsstoff: E 211</li>
+                            <li>* Stabilisatoren: Natriumacetat, Natriumcitrat,
+                                Diphosphate. Antioxidationsmittel: Natriumascorbat.
+                                Konservierungsstoff: Natriumnitrit, Buchenholzrauch.</li>
+                        </ul>
+
+                        <div class="burgers-item__btn buy-button" data-value="0" >BESTELLEN</div>
+                    </div>
+
+                    <div class="burgers-item">
+                        <div class="burgers-item__img" style="background-image: url(./assets/images/venus.png)">
+                        </div>
+                        <div class="burgers-item__title">Burger “VENUS”</div>
+                        <div class="burgers-item__subtitle">Chicken</div>
+                        <ul class="burgers-item__description">
+                            <li>Hähnechenschnitzel, Salat,</li>
+                            <li>Gewürzgurken, Tomaten, Zwiebel,</li>
+                            <li>Käsesauce, Spezial Sauce</li>
+                        </ul>
+                        <div class="burgers-item__price">
+                            EUR 9.90
+                        </div>
+                        <div class="burgers-item__allergeneTitle">Enthält Allergene:</div>
+                        <ul class="burgers-item__allergene">
+                            <li></li>
+                            <li>* Brötchen: Gluten, Milch, Ei</li>
+                            <li>* Crunchy Chicken: Gluten, Sellerie, Gerstenmalzextrakt</li>
+                            <li>* Stabilisatoren: Natriumacetat, Natriumcitrat,
+                                Diphosphate. Antioxidationsmittel: Natriumascorbat.
+                                Konservierungsstoff: Natriumnitrit, Buchenholzrauch.</li>
+                        </ul>
+                        <div class="burgers-item__btn buy-button" data-value="0" >BESTELLEN</div>
+                    </div>
+
+                    <div class="burgers-item">
+                        <div class="burgers-item__img" style="background-image: url(./assets/images/space.png)">
+                        </div>
+                        <div class="burgers-item__title">Burger “SPACE”</div>
+                        <div class="burgers-item__subtitle">Brie</div>
+                        <ul class="burgers-item__description">
+                            <li>Brioche Brötchen, Rinderhackfleisch,</li>
+                            <li>Salat, karamellisierte Birne,</li>
+                            <li>karamellisierte Zwiebel, spezial Souce</li>
+                        </ul>
+                        <div class="burgers-item__price">
+                            EUR 9.90
+                        </div>
+                        <div class="burgers-item__allergeneTitle">Enthält Allergene:</div>
+                        <ul class="burgers-item__allergene">
+                            <li></li>
+                            <li>* Brötchen: Gluten, Milch, Ei</li>
+                            <li>* Konservierungsstoff: E 211</li>
+                            <li>* Stabilisatoren: Natriumacetat, Natriumcitrat,
+                                Diphosphate. Antioxidationsmittel: Natriumascorbat.
+                                Konservierungsstoff: Natriumnitrit, Buchenholzrauch.</li>
+                        </ul>
+                        <div class="burgers-item__btn buy-button" data-value="0">BESTELLEN</div>
+                    </div>
+
+                    <div class="burgers-item">
+                        <div class="burgers-item__img" style="background-image: url(./assets/images/mars.png)">
+                        </div>
+                        <div class="burgers-item__title">Burger “MARS”</div>
+                        <div class="burgers-item__subtitle">Rot</div>
+                        <ul class="burgers-item__description">
+                            <li>Rinderhackfleisch, Salat,</li>
+                            <li>Beacon, würzige Karotte,</li>
+                            <li>Peperoni, Tomaten,</li>
+                            <li>Cheddar käse, Spezial Sauce</li>
+                        </ul>
+                        <div class="burgers-item__price">
+                            EUR 9.90
+                        </div>
+                        <div class="burgers-item__allergeneTitle">Enthält Allergene:</div>
+                        <ul class="burgers-item__allergene">
+                            <li></li>
+                            <li>* Brötchen: Gluten, Milch, Ei</li>
+                            <li>* Konservierungsstoff: E 211</li>
+                            <li>* Stabilisatoren: Natriumacetat, Natriumcitrat,
+                                Diphosphate. Antioxidationsmittel: Natriumascorbat.
+                                Konservierungsstoff: Natriumnitrit, Buchenholzrauch.</li>
+                        </ul>
+                        <div class="burgers-item__btn buy-button" data-value="0">BESTELLEN</div>
+                    </div>
+
+                    <div class="burgers-item">
+                        <div class="burgers-item__img" style="background-image: url(./assets/images/merkur.png)">
+                        </div>
+                        <div class="burgers-item__title">Burger “MERKUR”</div>
+                        <div class="burgers-item__subtitle">Schwarz</div>
+                        <ul class="burgers-item__description">
+                            <li>saftige Rinderhackfleisch, Salat,</li>
+                            <li>Mozzarella, sonnen getrocknete</li>
+                            <li>Tomaten, Beacon, Zwiebel, Barbecue</li>
+                            <li>Sauce, Spezial Sauce</li>
+                        </ul>
+                        <div class="burgers-item__price">
+                            EUR 9.90
+                        </div>
+                        <div class="burgers-item__allergeneTitle">Enthält Allergene:</div>
+                        <ul class="burgers-item__allergene">
+                            <li></li>
+                            <li>* Brötchen: Gluten, Milch, Ei</li>
+                            <li>* Konservierungsstoff: E 211</li>
+                            <li>* Stabilisatoren: Natriumacetat, Natriumcitrat,
+                                Diphosphate. Antioxidationsmittel: Natriumascorbat.
+                                Konservierungsstoff: Natriumnitrit, Buchenholzrauch.</li>
+                        </ul>
+                        <div class="burgers-item__btn buy-button" data-value="0">BESTELLEN</div>
+                    </div>
+
+                    <div class="burgers-item">
+                        <div class="burgers-item__img" style="background-image: url(./assets/images/jupiter.png)">
+                        </div>
+                        <div class="burgers-item__title">Burger “JUPITER”</div>
+                        <div class="burgers-item__subtitle">Barbecue</div>
+                        <ul class="burgers-item__description">
+                            <li>Brioche Brötchen, Rinderhackfleisch,</li>
+                            <li>Salat, Beacon, Gewürzgurken, Tomaten,</li>
+                            <li>Zwiebel, Cheddar käse, Barbecue</li>
+                            <li>Sauce, Spezial Sauce</li>
+                        </ul>
+                        <div class="burgers-item__price">
+                            EUR 9.90
+                        </div>
+                        <div class="burgers-item__allergeneTitle">Enthält Allergene:</div>
+                        <ul class="burgers-item__allergene">
+                            <li></li>
+                            <li>* Brötchen: Gluten, Milch, Ei</li>
+                            <li>* Konservierungsstoff: E 211</li>
+                            <li>* Stabilisatoren: Natriumacetat, Natriumcitrat,
+                                Diphosphate. Antioxidationsmittel: Natriumascorbat.
+                                Konservierungsstoff: Natriumnitrit, Buchenholzrauch.</li>
+                        </ul>
+                        <div class="burgers-item__btn buy-button" data-value="0">BESTELLEN</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section hidden section-dual id = " controller">
+        <div class="container">
+            <h2>UNSERE <span>BESTSELLERS</span></h2>
+            <div class="dual flex flex-center">
+                <div class="dual-description">
+                    <p>Verwöhnen Sie Ihren Gaumen mit unserem <span class="orange">Bestseller, dem 'SPACE'
+                            Burger.</span>
+                        Zwischen goldenen Brioche-Brötchen verbirgt sich
+                        ein saftiges Rinderhackfleisch-Patty, knackiger Salat, karamellisierte Birne und Zwiebeln, alles
+                        harmonisch vereint
+                        durch unsere besondere Sauce. Heben Sie Ihr Burger-Erlebnis auf ein neues Level – es ist nicht
+                        nur eine Mahlzeit, es ist
+                        ein Abenteuer!</p>
+                    <p class="WAHL"><span class="orange"> WAHL AUS DER SPEISEKARTE UND </span></p>
+                    <div class="dual-description__info flex">
+                        <div class="dual-description__price">EUR 9.90</div>
+                        <div class="dual-description__button buy-button" data-value="0">BESTELLEN</div>
+                    </div>
+                </div>
+                <div class="dual-img">
+                    <img src="./assets/images/space.png" alt="burger">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section hidden section-about" id="about">
+        <h2>ÜBER <span>UNS</span></h2>
+        <div class="video">
+            <div class="video-info">
+                <div class="video-title">
+                    Im Jahr 2023 eröffneten wir unseren familiären Burger-Anhänger in Bernau bei Berlin und verliebten
+                    die Stadt in den legendären
+                    "Space-Burger". Wir versorgen die lautesten Festivals und Veranstaltungen mit unseren Bürgern.
+                    Unsere Burger
+                    sind eine Mischung aus mutigen Geschmäckern und natürlichen Zutaten. Es lohnt sich, sie einmal zu
+                    probieren, um ein Teil
+                    unserer Familie werden zu wollen!
+                </div>
+                <div class="video-button">
+                    PLAY
+                </div>
+            </div>
+            <video id="video" src="./assets/images/video.mp4" poster="./assets/images/bg-video.png"></video>
+        </div>
+    </section>
+    <section class="section hidden section-kids" id="kids">
+        <div class="container">
+            <h2>SPACE <span>KIDS MENÜ</span></h2>
+            <div class="kids-items">
+                <div class="kids-item">
+                    <h3>Unsere spezielle Kindermenü-Kollektion in der Burger
+                        Bude ist nicht nur lecker, sondern wird auch in einer
+                        farbenfrohen, firmeneigenen Verpackung mit
+                        kleine Überaschung serviert!</h3>
+                    <div class="kids-switch flex flex-center">
+                        <div class="kids-switch__title active" data-beilagen="kids_burger">
+                            MENÜ BURGER
+                        </div>
+
+                        <div class="kids-switch__checkbox">
+                            <input type="checkbox" name="beilagen" class="checkbox">
+                            <span class="checkmark"></span>
+                        </div>
+                        <div class="kids-switch__title " data-beilagen="kids_chicken">
+                            MENÜ CHICKEN
+                        </div>
+
+
+                    </div>
+                    <div class="kids-info flex flex-center">
+                        <div class="kids-img">
+                            <div class="kids-img__wrap" style="background-image: url(./assets/images/bg-card1.png);">
+                                <img src="./assets/images/pc.png" alt="">
+                            </div>
+                        </div>
+                        <div class="kids-description">
+                            <ul class="kids-list active" id="kids_burger">
+                                <li><span class="faire">Burger</span><img src=""></li>
+                                <li><span class="faire">Pommes klein</span></li>
+                                <li><span class="faire">Dessert</span></li>
+                                <li><span class="faire">Saft</span></li>
+                                <li><span class="faire">Kleine überaschung</span></li>
+                                <div class="kids-item__price">
+                                    EUR 8.90
+                                </div>
+
+                            </ul>
+
+                            <ul class="kids-list" id="kids_chicken">
+                                <li><span class="faire">Chicken Nuggets 4st.</span><img src=""></li>
+                                <li><span class="faire">Pommes klein</span></li>
+                                <li><span class="faire">Dessert</span></li>
+                                <li><span class="faire">Saft</span></li>
+                                <li><span class="faire">Kleine überaschung</span></li>
+                                <div class="kids-item__price">
+                                    EUR 8.90
+                                </div>
+                            </ul>
+                            <div class="kids-button buy-button"data-value="1">
+                                BESTELLEN
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section hidden section-pommes" id="pommes">
+        <h2>ABER DAS IST <span>NOCH NICHT ALLES</span></h2>
+
+        <div class="pommes swiper flex-center flex">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide pommes-item">
+                    <div class="pommes-item__info flex">
+                        <div class="pommes-item__subtitle">"TEXAS" POMMES FRITES</div>
+
+
+                    </div>
+
+                    <div class="pommes-item__title">
+                        Ein unvergesslicher Genuss!
+                    </div>
+
+                    <div class="pommes-item__description flex flex-center">
+                        <div class="pommes-item__img"
+                            style="background-image: url(./assets/images/texas_pommes_frites.png)"></div>
+
+                        <div class="pommes-item__text flex">
+                            <p>
+                                Knusprige Pommes, herzhaftes Hackfleisch, würzige Gewürzgurken, cremiger Cheddarkäse,
+                                aromatische Barbecue Sauce, zarte Käsesauce und leckere Mayonnaise vereinen sich zu
+                                einem Geschmackserlebnis, das in
+                                Erinnerung bleibt. Guten Appetit!
+                            </p>
+
+                            <div class="pommes-item__price">EUR 7.90</div>
+
+                            <a href="#" class="pommes-item__button buy-button" data-value="2"> BESTELLEN</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide pommes-item">
+                    <div class="pommes-item__info flex">
+                        <div class="pommes-item__subtitle">"CHICKEN" POMMES FRITES</div>
+
+
+                    </div>
+
+                    <div class="pommes-item__title">
+                        Eine perfekte Kombination für ein unvergleichliches Geschmackserlebnis!
+                    </div>
+
+                    <div class="pommes-item__description flex flex-center">
+                        <div class="pommes-item__img"
+                            style="background-image: url(./assets/images/chicken_pommes_frites.png)"></div>
+
+                        <div class="pommes-item__text flex">
+                            <p>
+                                Knusprige Pommes, saftiges Hähnchenschnitzel, cremige Käsesauce und delikate Mayonnaise.
+                                Eine perfekte Kombination für
+                                ein unvergleichliches Geschmackserlebnis! Guten Appetit!
+                            </p>
+
+                            <div class="pommes-item__price">EUR 8.90</div>
+
+                            <a href="#" class="pommes-item__button buy-button"data-value="2"> BESTELLEN</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide pommes-item">
+                    <div class="pommes-item__info flex">
+                        <div class="pommes-item__subtitle">"CHEESE - Jalapeños" POMMES FRITES</div>
+
+
+                    </div>
+
+                    <div class="pommes-item__title">
+                        Gönnen Sie sich diese köstliche Kreation!
+                    </div>
+
+                    <div class="pommes-item__description flex flex-center">
+                        <div class="pommes-item__img"
+                            style="background-image: url(./assets/images/chees_jalapenos_frites_img.png)"></div>
+
+                        <div class="pommes-item__text flex">
+                            <p>
+                                Knusprige Pommes, verführerische Käsesauce und pikante Jalapeños. Eine geschmackvolle
+                                Fusion, die Ihre Geschmacksnerven
+                                verzaubert und einen unvergesslichen Genuss verspricht.
+                            </p>
+
+                            <div class="pommes-item__price">EUR 8.90</div>
+
+                            <a href="#" class="pommes-item__button buy-button"data-value="2"> BESTELLEN </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-prev swiper-button flex flex-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"
+                    id="_24x24_On_Light_Arrow-Left" data-name="24x24/On Light/Arrow-Left">
+                    <rect id="view-box" width="16" height="16" fill="none" />
+                    <path id="Shape"
+                        d="M.22,10.22A.75.75,0,0,0,1.28,11.28l5-5a.75.75,0,0,0,0-1.061l-5-5A.75.75,0,0,0,.22,1.28l4.47,4.47Z"
+                        transform="translate(14.75 17.75) rotate(180)" fill="inherit" />
+                </svg>
+            </div>
+
+            <div class="swiper-button-next swiper-button flex flex-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"
+                    id="_24x24_On_Light_Arrow-Left" data-name="24x24/On Light/Arrow-Left">
+                    <rect id="view-box" width="16" height="16" fill="none" />
+                    <path id="Shape"
+                        d="M.22,10.22A.75.75,0,0,0,1.28,11.28l5-5a.75.75,0,0,0,0-1.061l-5-5A.75.75,0,0,0,.22,1.28l4.47,4.47Z"
+                        transform="translate(14.75 17.75) rotate(180)" fill="inherit" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section class="section hidden section-faq" id="faq">
+        <div class="container">
+            <h2><span>Bewertungen</span></h2>
+            <div class="faq-items flex">
+
+                <div class="faq-item">
+                    <div class="faq-item__header flex">
+                        <p>"Hervorragende Burger direkt zu Ihnen nach Hause!" </p>
+                        <span class="flex flex-center"></span>
+                    </div>
+                    <div class="faq-item__content">
+                        <p><span>Bewertung:</span> "Space Burger hat meine Erwartungen übertroffen! Die Burger sind
+                            nicht nur außerirdisch gut, sondern die
+                            Möglichkeit der Lieferung macht es noch besser. Perfekt für einen gemütlichen Abend zu Hause
+                            mit köstlichen Burgern!" <br><span>Daniel aus Berlin</span></p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-item__header flex">
+                        <p>"Leckere Snacks aus dem Weltraum!"</p>
+                        <span class="flex flex-center"></span>
+                    </div>
+                    <div class="faq-item__content">
+                        <p><span>Bewertung:</span> "Space Burger ist unser Lieblingsort für schnelle Snacks. Die
+                            Vielfalt an Burgern und Sandwiches ist
+                            beeindruckend, und die Option für die Lieferung macht es besonders bequem. Die Qualität und
+                            der Geschmack sind wirklich
+                            außergewöhnlich." <br><span>Eric aus Bernau bei Berlin</span></p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-item__header flex">
+                        <p>"Kinderfreundlich und lecker!"</p>
+                        <span class="flex flex-center"></span>
+                    </div>
+                    <div class="faq-item__content">
+                        <p><span>Bewertung:</span> "Space Burger hat nicht nur großartiges Essen für Erwachsene, sondern
+                            auch eine fantastische Auswahl für
+                            Kinder. Das kinderfreundliche Menü und die bunten Verpackungen sind ein Hit bei den Kleinen.
+                            Eine tolle Option für
+                            Familien!" <br><span>Robert aus Eberswalde</span></p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-item__header flex">
+                        <p>"Echte Gaumenfreude auf Rädern!"</p>
+                        <span class="flex flex-center"></span>
+                    </div>
+                    <div class="faq-item__content">
+                        <p><span>Bewertung:</span> "Space Burger bietet nicht nur schnelle Mahlzeiten, sondern auch eine
+                            echte kulinarische Erfahrung. Die
+                            Auswahl an Sandwiches und Getränken ist vielfältig, und die Qualität ist immer erstklassig.
+                            Perfekt für unterwegs!" <br><span>Paul aus Zepernik</span></p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-item__header flex">
+                        <p>"Köstliche Burger ohne das Chaos in der Küche!"</p>
+                        <span class="flex flex-center"></span>
+                    </div>
+                    <div class="faq-item__content">
+                        <p><span>Bewertung:</span> "Wenn Sie Lust auf einen erstklassigen Burger haben, aber keine Lust
+                            haben zu kochen, ist Space Burger die
+                            ideale Lösung. Die Lieferoption macht es einfach, sich verwöhnen zu lassen. Probieren Sie es
+                            unbedingt aus!"<br><span>Anonym</span></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-top flex">
+                <ul class="footer-menu flex flex-center">
+                    <li><a data-text="burger" href="#burger" class="menu-link">Burger Menü</a></li>
+                    <li><a href="#sandwich" class="menu-link">Sandwich Menü</a></li>
+                    <li><a href="#pommes" class="menu-link">Pommes Menü</a></li>
+                    <li><a href="#kids" class="menu-link">Kids Menü</a></li>
+                    <li><a href="#faq" class="menu-link">Getränke</a></li>
+                    <li><a href="#footer" class="menu-link">Souce</a></li>
+                </ul>
+                <div class="footer-lang flex">
+                    <span> Language: </span>
+
+                    <div class="footer-lang__list">
+                        <div class="footer-lang_current">
+                            DE
+                        </div>
+                        <div class="footer-lang__content">
+                            <div class="footer-lang__content-item">En</div>
+                            <div class="footer-lang__content-item">De</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="footer-info">
+                <span>DIE BESTEN BURGER IN DER STADT</span>
+                <br>Unsere besten Burger in der Stadt zeichnen sich durch die höchste Qualität und
+                den einzigartigen Geschmack aus. Mit handverlesenen Zutaten und raffinierten Rezepten
+                bieten wir nicht nur einen Burger, sondern ein unvergleichliches kulinarisches Erlebnis.
+                Jeder Bissen ist eine Fusion aus Aromen, die die Sinne ansprechen und ein unvergessliches
+                Genusserlebnis schaffen. Probieren Sie unsere Besten und überzeugen Sie sich selbst!
+            </div>
+            <div class="footer-logo">
+                <img src="./assets/images/footer_logo.png" alt="logo">
+            </div>
+            <div class="footer-year">2023</div>
+            <div class="footer-rights">Developed by <span>Danil Kurmayev</span>. All rights reserved.</div>
+        </div>
+        <button id="btnTop" onclick="scrollToTop()"></button>
+        <script>
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                });
+            }
+        </script>
+    </footer>
+
+    <div class="modal">
+        <div class="modal-wrapper">
+            <div class="modal-title">Ihre Bestellung</div>
+            <div class="modal-subtitle"></div>
+
+            <form class = "form">
+                <div class="form-group full">
+                    <label for="name">Name, Vorname * :</label>
+                    <input 
+                    type="text" 
+                    required 
+                    placeholder="Mark Mustermann" 
+                    id="name"
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="strasse">Ihre Anschrift * :</label>
+                    <input type="text" 
+                    required 
+                    placeholder="Muster Str. 9" 
+                    id="strasse" 
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="plz">PLZ * :</label>
+                    <input type="text" 
+                    required 
+                    placeholder="12345" 
+                    id="plz" />
+                </div>
+
+                <div class="form-group full" >
+                    <label for="phone">Ihre Telefonnummer</label>
+                    <input type="text" 
+                    required 
+                    placeholder="+49 (0) 176 12 34 56 78" 
+                    id="phone" 
+                    />
+                </div>
+                <div class="form-checkbox flex flex-center">
+                    <input type="checkbox" name="agreement" id="agreement" required>
+                    <span class="check"></span>
+                    <label for="agreement">
+                        I agree with the <span class="red">rules</span>of the site
+                    </label>
+                </div>
+                <div class="modal-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Dolorem assumenda accusantium explicabo deserunt saepe doloribus, 
+                    maxime itaque impedit doloremque eius eaque omnis nesciunt 
+                    inventore ratione ipsum. Earum cumque iusto quam.
+                </div>
+
+                <div class="modal-total flex flex-center">
+                    <div class="modal-total__text">YOUR TOTAL SUMMA:</div>
+                    <div class="modal-total__price"></div>
+                </div>
+                <button type="submit" class="modal-submit">BESTELLEN</button>
+            </form>
+            <div class="modal-close">X</div>
+        </div>
+    </div>
+    <div class="overlay">
+
+    </div>
+</body>
+</html>

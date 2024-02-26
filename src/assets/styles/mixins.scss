@@ -1,0 +1,43 @@
+@import "./colors.scss";
+
+@mixin button($bg: $violet) {    background: $bg;
+    border-radius: 5px;
+    padding: 20px 80px;
+    font-weight: 500;
+    line-height: 19px;    
+    margin-top: 40px;
+    color: $white;
+    display: flex;
+    width: max-content;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.25s;
+    background: linear-gradient(to top, #6E4A21, #ac6d33);
+}
+
+@mixin hoverViolet {
+    &:hover {
+        background: linear-gradient(to bottom, #9c6729, #e29e5e);
+    }
+
+    &:active {
+        background: #6039a0;
+    }
+}
+
+@mixin hoverOrange {
+    &:hover {
+        background: #f8625a;
+    }
+
+    &:active {
+        background: #a4221c;
+    }
+}
+
+@mixin bg {
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
+}
+

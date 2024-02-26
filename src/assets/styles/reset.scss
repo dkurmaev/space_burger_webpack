@@ -1,0 +1,100 @@
+@import '../styles/colors.scss';
+@import '../styles/mixins.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: $main;      
+    font-family: "Rubik", Roboto, sans-serif;
+    font-size: 16px;
+    color: $white;
+    
+        
+        
+
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input, button {
+    border: none;
+    outline: none;
+    background: none;
+    color: $white;
+    font-family: "Rubik", Roboto, sans-serif;
+    font-size: 16px;
+
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    max-width: 1420px;
+    margin:10px auto;   
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 80px;
+    margin-top: 115px;   
+    line-height: 87px;
+    color: $white;
+    text-align: center;
+    opacity: 1;
+    transition: opacity .5s;
+    span {
+            color: $faire;
+        }
+}   
+
+.violet {
+    color: $violet;
+}
+
+.orange {
+    color: $orange;
+}
+.faire {
+    color: &faire;
+}
+    
+
+
+
+
+
