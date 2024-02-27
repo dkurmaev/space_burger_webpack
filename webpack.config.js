@@ -24,8 +24,13 @@ module.exports = {
         test: /\.(s[ac]ss|css)$/i,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: "asset/resource",
+      },
     ],
   },
+
   plugins: [
     new HtmlWebpackPlugin({
       title: "Space Burger",
@@ -33,7 +38,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: "src/assets/images", to: "images" }, // копируем изображения из папки assets/images в папку images
+        { from: "src/assets/images", to: "assets/images" }, // копируем изображения из папки assets/images в папку images
       ],
     }),
   ],
